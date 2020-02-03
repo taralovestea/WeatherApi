@@ -1,0 +1,49 @@
+body {
+    background-image: url(assets/lightning.jpg);
+    font-family: Helvetica, Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 800px;
+    height: 600px;
+    padding: 2%;
+    margin: 6px;
+}
+
+h1 {
+    font-size: 50px;
+    background-color: white;
+    opacity: 0.7;
+    border: 1px solid black;
+  }
+#dashboard {
+    text-align: left;
+    width: 800px;
+    font-size: 20px;
+    background-color: white;
+    opacity: 0.9;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 14px;
+}
+#search-bar{
+    font-size: 14px;
+}
+#search {
+    padding: 10px;
+}
+
+#current-temp {
+    font-family: monospace;
+}
+
+#five-day {
+    margin: 40px;
+    padding: 30px;
+}
+
+.city-country {
+    font-size: 20px;
+    font-weight: bold;
+}

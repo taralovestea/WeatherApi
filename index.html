@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <main id="wrapper">
+        <h1>Weather!</h1>
+        <div id="dashboard">
+            <section id="search">
+                <!-- input tag -->
+            <input id="searchbar" onkeyup=" " type="text"
+              name="search" placeholder="Enter Zip Code"></section>
+            <div class="city-country"></div>
+            <div class="current-temp"></div>
+            <div class="humidity"></div>
+            <div class="windspeed"></div>
+            <div class="uv-index"></div>
+            <br>
+            <div class="five-day">
+                <card><img src="assets/sunny.png" height="100"></card>
+                <card><img src="assets/sunny.png" height="100"></card>
+                <card><img src="assets/partly-sunny.png" height="100"></card>
+                <card><img src="assets/showers.png" height="100"></card>
+                <card><img src="assets/thunderstorms.png" height="100"></card>
+            </div>
+        </div>
+        <aside></aside>
+    </main>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
