@@ -20,7 +20,7 @@ function call_weather_ap(a_zipcode){
       // console.log(res.main);
       // console.log(res.main.temp);
 
-      alert(res);}
+      console.log(res);}
   });
 }
 
