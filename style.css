@@ -5,3 +5,14 @@ p {
     color: pink;
     font-size: larger;
 }
+
+.forecast {
+    background-color: darkslategray;
+    margin-left: 10px;
+    padding: 7px;
+    
+
+}
+h5{
+    color: pink;
+}
