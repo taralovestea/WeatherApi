@@ -12,12 +12,12 @@ $("#searchbar_form").submit(function(event){
   }).then(function(response) {
     console.log(response);
     console.log(queryURL);
-    let results = [response.name, response.wind.speed, response.wind.deg, response.main.humidity, response.main.temp,]
-    console.log(results);
-    $(".city").append("<h2>In " + (response.name) + ", " + (response.sys.country)+ "<img src=http://openweathermap.org/img/wn/"+(response.weather[0].icon)+".png></h2>");
-    $(".temp").append("the current temperature is " + Math.floor((response.main.temp - 273.15) * 1.80 + 32) + " &deg;F");
-    $(".humidity").append("the humidity level is " + (response.main.humidity) + " %");
-    $(".windspeed").append("the wind speed is " + response.wind.speed + " MPH");
+    // let results = [response.name, response.wind.speed, response.wind.deg, response.main.humidity, response.main.temp,]
+    // console.log(results);
+    $(".city").html("<h2>In " + (response.name) + ", " + (response.sys.country)+ "<img src=http://openweathermap.org/img/wn/"+(response.weather[0].icon)+".png></h2>");
+    $(".temp").html("the current temperature is " + Math.floor((response.main.temp - 273.15) * 1.80 + 32) + " &deg;F");
+    $(".humidity").html("the humidity level is " + (response.main.humidity) + " %");
+    $(".windspeed").html("the wind speed is " + response.wind.speed + " MPH");
   
   var lat= response.coord.lat
   var lon= response.coord.lon
@@ -28,7 +28,8 @@ $("#searchbar_form").submit(function(event){
     method: "GET"
   }).then(function(response) {
   console.log(response)
-  $(".uv-index").append("the UV index is "+ response.value);
+  // $(".uv-index").append("the UV index is "+ response.value);
+  $(".uv-index").html("the UV index is " + response.value);
   });
   $.ajax({
     url: fiveDayUrl,
@@ -50,3 +51,5 @@ $("#searchbar_form").submit(function(event){
   });
   });
 })
+
+
