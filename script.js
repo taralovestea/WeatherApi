@@ -43,7 +43,7 @@ $("#searchbar_form").submit(function(event){
     addedDays++
     var fiveDayBlock = $(`<div class= "forecast">
                           <h5> ${dayNow} </h5>
-                          <img src=http://openweathermap.org/img/wn/${response.list[i].weather[0].icon}.png>
+                          <img src=https://openweathermap.org/img/wn/${response.list[i].weather[0].icon}.png>
                           <p> ${Math.floor(((response.list[i].main.temp - 273.15) * 1.8) + 32)} Degrees </p>
                           <p> ${response.list[i].main.humidity} % Humidity </p>`)
     $("#forecast").append(fiveDayBlock);
