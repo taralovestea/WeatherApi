@@ -14,7 +14,7 @@ $("#searchbar_form").submit(function(event){
     console.log(queryURL);
     // let results = [response.name, response.wind.speed, response.wind.deg, response.main.humidity, response.main.temp,]
     // console.log(results);
-    $(".city").html("<h2>In " + (response.name) + ", " + (response.sys.country)+ "<img src=http://openweathermap.org/img/wn/"+(response.weather[0].icon)+".png></h2>");
+    $(".city").html("<h2>In " + (response.name) + ", " + (response.sys.country)+ "<img src=https://openweathermap.org/img/wn/"+(response.weather[0].icon)+".png></h2>");
     $(".temp").html("the current temperature is " + Math.floor((response.main.temp - 273.15) * 1.80 + 32) + " &deg;F");
     $(".humidity").html("the humidity level is " + (response.main.humidity) + " %");
     $(".windspeed").html("the wind speed is " + response.wind.speed + " MPH");
