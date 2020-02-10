@@ -21,8 +21,8 @@ $("#searchbar_form").submit(function(event){
   
   var lat= response.coord.lat
   var lon= response.coord.lon
-  var uVurl= "http://api.openweathermap.org/data/2.5/uvi?appid="+APIKey+"&lat="+lat+"&lon="+lon;
-  var fiveDayUrl = "http://api.openweathermap.org/data/2.5/forecast?id="+response.id+ "&appid=" +APIKey;
+  var uVurl= "https://api.openweathermap.org/data/2.5/uvi?appid="+APIKey+"&lat="+lat+"&lon="+lon;
+  var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?id="+response.id+ "&appid=" +APIKey;
   $.ajax({
     url: uVurl,
     method: "GET"
