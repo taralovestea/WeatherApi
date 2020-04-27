@@ -1,7 +1,22 @@
 # WeatherApi
-https://taralovestea.github.io/WeatherApi/
-Don't you wish you could predict the future? Now you can with my weather API website!! 
-Enter a city into the search bar to learn the current weather and also get a 5 day forecast! 
+[deployed link](https://taralovestea.github.io/WeatherApi/)
+Don't you wish you could predict the weather? With this weatherAPI application now you can! 
+Search any city and recieve a 5 day forecast! 
+
+## Getting Started
+Clone down the repo and 
+```
+NPM install
+```
+
+
+## Built With
+
+* [OpenWeather API](https://api.openweathermap.org/) - The API used 
+* [jQuery](https://jquery.com/) - Javascript Library 
+
+
+
 
 ![weatherAPI](https://user-images.githubusercontent.com/59029999/74108997-21cb0000-4b45-11ea-83e8-85cc8e5fcf6d.png)
 
